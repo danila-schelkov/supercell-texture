@@ -1,7 +1,7 @@
-package com.vorono4ka.sctx;
+package dev.donutquine.sctx;
 
 import com.supercell.texture.TextureData;
-import com.vorono4ka.utilities.EnumSetHelper;
+import dev.donutquine.utilities.EnumSetHelper;
 
 import java.util.ArrayList;
 import java.util.EnumSet;

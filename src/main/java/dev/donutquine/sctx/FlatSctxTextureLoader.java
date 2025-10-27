@@ -1,8 +1,8 @@
-package com.vorono4ka.sctx;
+package dev.donutquine.sctx;
 
 import com.supercell.texture.TextureData;
-import com.vorono4ka.swf.file.compression.Zstandard;
-import com.vorono4ka.utilities.FnvHasher;
+import dev.donutquine.swf.file.compression.Zstandard;
+import dev.donutquine.utilities.FnvHasher;
 
 import java.io.IOException;
 import java.io.InputStream;

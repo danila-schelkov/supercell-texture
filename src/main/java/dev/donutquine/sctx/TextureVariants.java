@@ -1,4 +1,4 @@
-package com.vorono4ka.sctx;
+package dev.donutquine.sctx;
 
 import java.util.ArrayList;
 import java.util.List;
