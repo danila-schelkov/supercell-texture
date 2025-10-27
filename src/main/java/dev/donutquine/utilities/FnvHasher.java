@@ -1,4 +1,4 @@
-package com.vorono4ka.utilities;
+package dev.donutquine.utilities;
 
 import java.math.BigInteger;
 

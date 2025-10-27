@@ -4,7 +4,7 @@ plugins {
     id "maven-publish"
 }
 
-group = 'com.vorono4ka'
+group = 'dev.donutquine'
 version = project.version
 
 repositories {
@@ -12,8 +12,8 @@ repositories {
     maven {
         url = uri("https://maven.pkg.github.com/danila-schelkov/*")
         credentials {
-            username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-            password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+            password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
         }
     }
 }
@@ -21,7 +21,7 @@ repositories {
 dependencies {
     implementation group: 'com.google.flatbuffers', name: 'flatbuffers-java', version: project.flatbuffers_version
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: project.slf4j_version
-    implementation group: 'com.vorono4ka', name: 'sc-file', version: project.sc_file_version
+    implementation group: 'dev.donutquine', name: 'sc-file', version: project.sc_file_version
 }
 
 import io.netifi.flatbuffers.plugin.tasks.FlatBuffers
@@ -47,8 +47,8 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/danila-schelkov/supercell-texture")
             credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
             }
         }
     }

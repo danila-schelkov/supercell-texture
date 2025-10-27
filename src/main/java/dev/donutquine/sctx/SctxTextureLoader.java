@@ -1,4 +1,4 @@
-package com.vorono4ka.sctx;
+package dev.donutquine.sctx;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -1,4 +1,4 @@
-package com.vorono4ka.sctx;
+package dev.donutquine.sctx;
 
 import java.util.Map;
 import java.util.TreeMap;
